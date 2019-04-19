@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Assign 4b</title>
+
+<script>
+function add(a, b)
+{
+sum = a+b;
+return sum;
+}
+function multiply()
+{
+num1=document.getElementById("firstnumber").value
+num2=document.getElementById("secondnumber").value
+document.getElementById("result").innerHTML=num1*num2;
+}
+</script>
+</head>
+
+<body>
+<h1>Welcome</h1>
+<p> 
+<script>
+document.writeln("9 + 5 = " + add(9,5) );
+alert("1200 * 30450 = " + multiply(1200,30450));
+</script>
+
+<form>
+Enter first number: <input type ="text" id = "firstnumber"/><br>
+Enter second number: <input type ="text" id = "secondnumber"/><br>
+<input type=button onClick=multiply() value="Multiply Numbers" />
+</form>
+<p>
+The multiply function result is: <span id="result"></span>
+</body>
+</html>
